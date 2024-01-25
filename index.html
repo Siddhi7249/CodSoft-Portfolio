@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src ="https://kit.fontawesome.com/c4254e24a8.js"crossorigin="anonymous"></script>
+    
+</head>
+<body>
+   
+    <div id="header">
+       
+        <div class="container">
+            <nav>
+                <img src="images/logo3.png" id="logo3"   >
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact </a></li>
+                    <i class="fa-sharp fa-solid fa-xmark"onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars"onclick="openmenu()"></i>
+            </nav>
+            <div class="header-txt">
+                
+                <h1>Hi, I'm <span>Siddhi</span><br> Sutar from Baramati</h1>
+                <p>Front End developer</p>
+            </div><br>
+            <a href="images/Resume.pdf" download class="btn btn2">View my Resume</a>
+        </div>
+    </div>
+<!----------About------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1"> 
+                    <img src="images/b2.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Hello! I'm Siddhi Sutar ,a passionate frontend developer who loves making websites look  awesome and work smoothly.
+                        I'm about creating designs that catch your eye and making sure everything is easy and fun for users.i bring ideas to life online.Let's build something great together!
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <!--<p class="tab-links" onclick="opentab('Experience')">Experience</p>--> 
+
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>HTML<span><br>Proficient in creating structured and semantic web content.</span></li>
+                            <li>CSS<span><br>Skilled in crafting visually appealing and responsive designs</span></li>
+                            <li>JavaScript<span><br>Experienced in building dynamic and interactive web applications.</span></li>
+                            <li>Bootstrap<span><br>Utilized Bootstrap for efficient and responsive front-end development.</span></li>
+                            <li>DSA in Java<span><br>Strong foundation in Java for implementing efficient algorithms and data structures.</span></li>
+                            <li>MYSQL<span><br>Proficient in database management and SQL for efficient data storage.</span></li>
+                            <li>Python<span><br>Proficient in Python programming for versatile application development.</span></li>
+                            <li>Machine learning<span><br>Applied machine learning techniques for data analysis and predictive modeling.</span></li>
+                        </ul>
+                    </div>
+
+                    
+
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2024-2025</span><br>B.E in Information Technology</li>
+                            <li><span>2021</span><br>Higher Secondary(12th) from Vidya Pratishthan College</li>
+                            <li><span>2019</span><br>Secondary School(10th)from New English School ,Dorlewadi</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-----Services------>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                   <h2>Web Design</h2>
+                   <p>Developed a university website with dynamic pages (Home, About Us, Blog, Contact Us)
+                     using HTML, CSS, JavaScript for a responsive and engaging a user experience.</p>
+                         <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Clone Design</h2>
+                    <p>Implemented an Amazon-inspired e-commerce website 
+                        clone using HTML and CSS, showcasing proficiency in front-end web development</p>
+                         <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Calculator</h2>
+                    <p>Designed and implemented a functional calculator using HTML, CSS, and JavaScript, combining a 
+                        sleek interface with accurate mathematical operations for an interactive user experience.</p>
+                         <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-----PORTFOLIO----->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title" >My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/W1.jpeg">
+                    <div class="layer">
+                        <h3>Tic Tac Toe</h3>
+                        <p>
+                            Designed and implemented a responsive Tic Tac Toe game using HTML, CSS, and JavaScript, showcasing front-end development skills. The project features an intuitive user interface, responsive design, and accurate
+                             game logic. Check out the live demo [provide link] for a hands-on experience.</p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                          
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/W2.jpg" style="height:100%" style="object-fit: cover;">
+                    <div class="layer">
+                        <h3>Stone,Paper,Scissors</h3>
+                        <p>Built a fun Stone Paper Scissors game with HTML, CSS, and JavaScript. The project showcases my skills in creating visually appealing interfaces and interactive game features. 
+                            Try it out live [provide link] to experience the game.</p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                           
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/W3.png" style="object-fit: cover;">
+                    <div class="layer">
+                        <h3>API Based Currency Converter</h3>
+                        <p>Designed and implemented a Currency Converter application, integrating a third-party API for real-time exchange rates. The project, built using HTML, CSS, and JavaScript, offers a user-friendly interface 
+                            where users can convert between different currencies. The application fetches up-to-date exchange rates from the API, ensuring accuracy in currency conversions. 
+                            Check out the live demo [provide link] to experience the convenience and functionality of this Currency Converter.
+
+                           </p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                           <!--<a href="#"><i class="fas fa-external-link-alt" ></i></a>--> 
+                    </div>
+                </div>
+            </div><br>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!--------contact------------>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">contact me</h1>
+                    <p> <i class="fa-sharp fa-solid fa-paper-plane"></i> contact@exam.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> 64322876592</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/siddhi-sutar-028486286/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Siddhi7249"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                    </div><br>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Enter your name" required>
+                        <input type="email" name="email"placeholder="Enter your Email" required>
+                        <textarea name="Message" rows="5" placeholder="Your Message"></textarea>
+                       <button type="submit"class="btn btn2">submit</button>
+
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright <i class="fa-regular fa-copyright"style="color:white"></i> kevin.made with <i class="fa-solid fa-heart"></i> by Easy Tutorials </p>
+            </div>
+        </div>
+    </div>
+   <script src="first.js"></script>
+   <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz-Jg-avZoDsFD1KrMcQcRdyrYQyKrsVIRKR7A0aQFn4TQ70O6waoACr3xKyUfg61jybA/exec'
+    const form = document.forms['submit-to-google-sheet']
+   const msg=document.querySelector("#msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },1000)
+            form.reset()
+            
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
